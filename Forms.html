@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Practice</title>
+<style>
+input, select{
+  padding: 10px;
+  width: 100%;
+  margin: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: lightgrey;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+input[type=submit]{
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+}
+input[type=text]:focus, input[type=email]:focus, select:focus{
+  background-color: lightblue;
+}
+h1{
+  
+}
+input.search {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url('Capture.JPG');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text].search:focus {
+    width: 100%;
+    background-color: white;
+}
+
+div, h1{
+  margin: 2% 20% 2%;
+}
+
+</style>
+  </head>
+  
+  <body>
+    <h1><marquee behavior="alternate" direction="left" scrollamount="10">CSS Form</marquee></h1>
+
+<div>
+  <input type="text" name="search" placeholder="Search.." class="search"><br><br>
+  <form action="" method="get">
+    <label for="fname">Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Enter Your Name"><br>
+
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter Your Password"><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email"><br>
+
+    <label for="country">Country</label><br>
+    <select id="country" name="country">
+      <option value="sel">Select Your Country</option>
+      <option value="bangladesh">Bangladesh</option>
+      <option value="australia">Australia</option>
+      <option value="ny">New York</option>
+    </select><br>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </body>
+  
+</html>
